@@ -16,6 +16,7 @@ Key specifications:
 * Five-band EQ - bass, middle, treble, presence, brilliance
 * EQ 6dB boost/cut
 
+![Documentation banner](https://github.com/honeypieio/five-band-eq/raw/main/docs/documentation-banner.png) 
 
 To build the project, everything needed is inside the `docs` directory
 
