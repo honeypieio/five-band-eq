@@ -1,0 +1,402 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title "Preamp & 5-band EQ"
+Date "2022-06-26"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:TL072 U2
+U 1 1 60FE8C90
+P 3300 3500
+F 0 "U2" H 3300 3867 50  0000 C CNN
+F 1 "TL072" H 3300 3776 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 3300 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3300 3500 50  0001 C CNN
+	1    3300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 60FEBD24
+P 2250 3400
+F 0 "C8" V 2021 3400 50  0000 C CNN
+F 1 "100n" V 2112 3400 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 2250 3400 50  0001 C CNN
+F 3 "~" H 2250 3400 50  0001 C CNN
+	1    2250 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60FEE7B5
+P 2900 4250
+F 0 "R3" H 2830 4204 50  0000 R CNN
+F 1 "2.2k" H 2830 4295 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2830 4250 50  0001 C CNN
+F 3 "~" H 2900 4250 50  0001 C CNN
+	1    2900 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 3600 2900 3600
+Wire Wire Line
+	2900 3600 2900 4000
+Connection ~ 2900 4000
+Wire Wire Line
+	2900 4000 2900 4100
+Wire Wire Line
+	2900 4400 2900 4500
+$Comp
+L Device:R_POT RV2
+U 1 1 60FEFDBB
+P 3250 4000
+F 0 "RV2" V 3043 4000 50  0000 C CNN
+F 1 "100k" V 3134 4000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3250 4000 50  0001 C CNN
+F 3 "~" H 3250 4000 50  0001 C CNN
+	1    3250 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 4000 3100 4000
+$Comp
+L power:GND #PWR0114
+U 1 1 60FF2F06
+P 2900 4500
+F 0 "#PWR0114" H 2900 4250 50  0001 C CNN
+F 1 "GND" H 2905 4327 50  0000 C CNN
+F 2 "" H 2900 4500 50  0001 C CNN
+F 3 "" H 2900 4500 50  0001 C CNN
+	1    2900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 60FF4440
+P 4750 4050
+F 0 "D1" V 4704 4130 50  0000 L CNN
+F 1 "1N4148" V 4795 4130 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4750 3875 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4750 4050 50  0001 C CNN
+	1    4750 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4148 D2
+U 1 1 60FF596A
+P 5250 4050
+F 0 "D2" V 5296 3970 50  0000 R CNN
+F 1 "1N4148" V 5205 3970 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5250 3875 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5250 4050 50  0001 C CNN
+	1    5250 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 3900 5250 3800
+Wire Wire Line
+	4750 3900 4750 3800
+Connection ~ 4750 3800
+Wire Wire Line
+	4750 3800 5250 3800
+Wire Wire Line
+	4750 4200 4750 4300
+Wire Wire Line
+	5250 4200 5250 4300
+$Comp
+L power:GND #PWR0115
+U 1 1 60FF871C
+P 4750 4300
+F 0 "#PWR0115" H 4750 4050 50  0001 C CNN
+F 1 "GND" H 4755 4127 50  0000 C CNN
+F 2 "" H 4750 4300 50  0001 C CNN
+F 3 "" H 4750 4300 50  0001 C CNN
+	1    4750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 60FF8BB7
+P 5250 4300
+F 0 "#PWR0116" H 5250 4050 50  0001 C CNN
+F 1 "GND" H 5255 4127 50  0000 C CNN
+F 2 "" H 5250 4300 50  0001 C CNN
+F 3 "" H 5250 4300 50  0001 C CNN
+	1    5250 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3400 1950 3400
+Text GLabel 1950 3400 0    50   Input ~ 0
+TO_PREAMP
+$Comp
+L Amplifier_Operational:TL072 U2
+U 2 1 60FFB51D
+P 6150 3900
+F 0 "U2" H 6150 4267 50  0000 C CNN
+F 1 "TL072" H 6150 4176 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 6150 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6150 3900 50  0001 C CNN
+	2    6150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4000 5750 4000
+Wire Wire Line
+	5750 4000 5750 4300
+Wire Wire Line
+	5750 4300 6550 4300
+Wire Wire Line
+	6550 4300 6550 3900
+Wire Wire Line
+	6550 3900 6450 3900
+Wire Wire Line
+	5850 3800 5250 3800
+Connection ~ 5250 3800
+Wire Wire Line
+	6550 3900 6750 3900
+Connection ~ 6550 3900
+Text GLabel 6750 3900 2    50   Input ~ 0
+TO_FILTER
+$Comp
+L Amplifier_Operational:TL072 U2
+U 3 1 61000174
+P 4450 4950
+F 0 "U2" V 4545 4950 50  0000 C CNN
+F 1 "TL072" V 4454 4950 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 4450 4950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4450 4950 50  0001 C CNN
+	3    4450 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 4950 4050 5050
+Wire Wire Line
+	4050 5050 4150 5050
+$Comp
+L Device:CP1 C10
+U 1 1 61016884
+P 4050 5300
+F 0 "C10" H 4165 5346 50  0000 L CNN
+F 1 "10u" H 4165 5255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4050 5300 50  0001 C CNN
+F 3 "~" H 4050 5300 50  0001 C CNN
+	1    4050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C11
+U 1 1 61017055
+P 4850 5300
+F 0 "C11" H 4735 5254 50  0000 R CNN
+F 1 "10u" H 4735 5345 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4850 5300 50  0001 C CNN
+F 3 "~" H 4850 5300 50  0001 C CNN
+	1    4850 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 5150 4050 5050
+Connection ~ 4050 5050
+Wire Wire Line
+	4050 5450 4050 5550
+Wire Wire Line
+	4850 5450 4850 5550
+$Comp
+L power:GND #PWR0119
+U 1 1 61019A7C
+P 4050 5550
+F 0 "#PWR0119" H 4050 5300 50  0001 C CNN
+F 1 "GND" H 4055 5377 50  0000 C CNN
+F 2 "" H 4050 5550 50  0001 C CNN
+F 3 "" H 4050 5550 50  0001 C CNN
+	1    4050 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 61019F38
+P 4850 5550
+F 0 "#PWR0120" H 4850 5300 50  0001 C CNN
+F 1 "GND" H 4855 5377 50  0000 C CNN
+F 2 "" H 4850 5550 50  0001 C CNN
+F 3 "" H 4850 5550 50  0001 C CNN
+	1    4850 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 61020EE4
+P 5250 5300
+F 0 "C12" H 5365 5346 50  0000 L CNN
+F 1 "100n" H 5365 5255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 5288 5150 50  0001 C CNN
+F 3 "~" H 5250 5300 50  0001 C CNN
+	1    5250 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5450 5250 5550
+$Comp
+L power:GND #PWR0122
+U 1 1 61022996
+P 5250 5550
+F 0 "#PWR0122" H 5250 5300 50  0001 C CNN
+F 1 "GND" H 5255 5377 50  0000 C CNN
+F 2 "" H 5250 5550 50  0001 C CNN
+F 3 "" H 5250 5550 50  0001 C CNN
+	1    5250 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3500 3650 3500
+Wire Wire Line
+	3400 4000 3650 4000
+Wire Wire Line
+	3650 4000 3650 3500
+Wire Wire Line
+	4200 3800 4750 3800
+Wire Wire Line
+	3250 4150 3250 4250
+Wire Wire Line
+	3250 4250 3650 4250
+Wire Wire Line
+	3650 4250 3650 4000
+Connection ~ 3650 4000
+$Comp
+L Device:R_POT RV3
+U 1 1 6115EE44
+P 4050 3800
+F 0 "RV3" H 3981 3846 50  0000 R CNN
+F 1 "100k" H 3981 3755 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4050 3800 50  0001 C CNN
+F 3 "~" H 4050 3800 50  0001 C CNN
+	1    4050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3500 4050 3500
+Wire Wire Line
+	4050 3500 4050 3650
+Connection ~ 3650 3500
+Wire Wire Line
+	4050 3950 4050 4050
+$Comp
+L power:GND #PWR0123
+U 1 1 61161DCF
+P 4050 4050
+F 0 "#PWR0123" H 4050 3800 50  0001 C CNN
+F 1 "GND" H 4055 3877 50  0000 C CNN
+F 2 "" H 4050 4050 50  0001 C CNN
+F 3 "" H 4050 4050 50  0001 C CNN
+	1    4050 4050
+	1    0    0    -1  
+$EndComp
+Text Notes 3050 4500 0    50   ~ 0
+GAIN (OVERDRIVE)
+Wire Wire Line
+	4750 5050 4850 5050
+Wire Wire Line
+	5250 5050 5250 5150
+Wire Wire Line
+	4850 5150 4850 5050
+Connection ~ 4850 5050
+Wire Wire Line
+	4850 5050 5250 5050
+$Comp
+L power:-15V #PWR0118
+U 1 1 61014FAA
+P 4850 4950
+F 0 "#PWR0118" H 4850 5050 50  0001 C CNN
+F 1 "-15V" H 4865 5123 50  0000 C CNN
+F 2 "" H 4850 4950 50  0001 C CNN
+F 3 "" H 4850 4950 50  0001 C CNN
+	1    4850 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR0117
+U 1 1 61013F58
+P 4050 4950
+F 0 "#PWR0117" H 4050 4800 50  0001 C CNN
+F 1 "+15V" H 4065 5123 50  0000 C CNN
+F 2 "" H 4050 4950 50  0001 C CNN
+F 3 "" H 4050 4950 50  0001 C CNN
+	1    4050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5050 4850 4950
+$Comp
+L Device:R R42
+U 1 1 61CDD826
+P 2600 3650
+F 0 "R42" H 2530 3604 50  0000 R CNN
+F 1 "1M" H 2530 3695 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2530 3650 50  0001 C CNN
+F 3 "~" H 2600 3650 50  0001 C CNN
+	1    2600 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 3800 2600 3900
+$Comp
+L power:GND #PWR0103
+U 1 1 61CE0F6D
+P 2600 3900
+F 0 "#PWR0103" H 2600 3650 50  0001 C CNN
+F 1 "GND" H 2605 3727 50  0000 C CNN
+F 2 "" H 2600 3900 50  0001 C CNN
+F 3 "" H 2600 3900 50  0001 C CNN
+	1    2600 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3500 2600 3400
+Wire Wire Line
+	2600 3400 3000 3400
+Wire Wire Line
+	2350 3400 2600 3400
+Connection ~ 2600 3400
+$Comp
+L power:GND #PWR0121
+U 1 1 61020A2E
+P 3600 5550
+F 0 "#PWR0121" H 3600 5300 50  0001 C CNN
+F 1 "GND" H 3605 5377 50  0000 C CNN
+F 2 "" H 3600 5550 50  0001 C CNN
+F 3 "" H 3600 5550 50  0001 C CNN
+	1    3600 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 5450 3600 5550
+Wire Wire Line
+	3600 5050 4050 5050
+Wire Wire Line
+	3600 5150 3600 5050
+$Comp
+L Device:C C9
+U 1 1 6101C1B7
+P 3600 5300
+F 0 "C9" H 3715 5346 50  0000 L CNN
+F 1 "100n" H 3715 5255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 3638 5150 50  0001 C CNN
+F 3 "~" H 3600 5300 50  0001 C CNN
+	1    3600 5300
+	1    0    0    -1  
+$EndComp
+Text Notes 4150 3650 0    50   ~ 0
+INPUT LEVEL
+Text Notes 3800 2950 0    50   ~ 0
+PREAMP - ADJUSTABLE GAIN & ATTENUATION
+$EndSCHEMATC

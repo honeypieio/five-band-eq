@@ -1,0 +1,30 @@
+Qty,Reference(s),Value,LibPart,Footprint
+12,"C1, C7, C9, C12, C16, C21, C23, C24, C25, C26, C31, C35",100n,Device:C,Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm
+4,"C2, C6, C10, C11",10u,Device:CP1,Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+1,C5,2.2n,Device:C,Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm
+1,C8,100n,Device:C_Small,Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm
+7,"C13, C15, C17, C22, C27, C32, C36",100u,Device:CP1,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm
+1,C14,1u,Device:CP1,Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm
+1,C18,470n,Device:C,Capacitor_THT:C_Disc_D7.5mm_W4.4mm_P5.00mm
+2,"C19, C20",220n,Device:C,Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm
+4,"C28, C30, C33, C34",22n,Device:C,Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm
+1,C29,47n,Device:C,Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm
+2,"D1, D2",1N4148,Diode:1N4148,Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal
+3,"J1, J2, J4",Conn_01x02_Male,Connector:Conn_01x02_Male,Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical
+1,J3,Conn_01x02_Male,Connector:Conn_01x02_Male,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+10,"Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10",BC547,Transistor_BJT:BC547,Package_TO_SOT_THT:TO-92_Inline_Wide
+3,"R1, R28, R34",22k,Device:R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
+2,"R2, R8",1k,Device:R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
+6,"R3, R5, R12, R18, R24, R30",2.2k,Device:R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
+5,"R4, R11, R17, R23, R29",9.1k,Device:R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
+5,"R6, R13, R19, R25, R31",680,Device:R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
+3,"R7, R26, R32",220,Device:R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
+7,"R9, R15, R16, R21, R22, R27, R33",10k,Device:R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
+1,R10,33k,Device:R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
+2,"R14, R20",270,Device:R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
+7,"R35, R36, R37, R38, R39, R40, R41",0,Device:R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+1,R42,1M,Device:R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
+6,"RV1, RV5, RV7, RV9, RV11, RV13",10k,Device:R_POT,Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical
+2,"RV2, RV3",100k Logarithmic,Device:R_POT,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+5,"RV4, RV6, RV8, RV10, RV12",100k Linear,Device:R_POT,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+2,"U1, U2",TL072,Amplifier_Operational:TL072,Package_DIP:DIP-8_W7.62mm_LongPads

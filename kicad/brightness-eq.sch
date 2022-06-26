@@ -1,0 +1,425 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title "Preamp & 5-band EQ"
+Date "2022-06-26"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 6111A6E9
+P 4950 3550
+AR Path="/61028EB6/6111A6E9" Ref="R?"  Part="1" 
+AR Path="/6110D687/6111A6E9" Ref="R?"  Part="1" 
+AR Path="/61114447/6111A6E9" Ref="R31"  Part="1" 
+F 0 "R31" H 5020 3596 50  0000 L CNN
+F 1 "680" H 5020 3505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4880 3550 50  0001 C CNN
+F 3 "~" H 4950 3550 50  0001 C CNN
+	1    4950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6111A6EF
+P 4550 3550
+AR Path="/61028EB6/6111A6EF" Ref="R?"  Part="1" 
+AR Path="/6110D687/6111A6EF" Ref="R?"  Part="1" 
+AR Path="/61114447/6111A6EF" Ref="R29"  Part="1" 
+F 0 "R29" H 4620 3596 50  0000 L CNN
+F 1 "9.1k" H 4620 3505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4480 3550 50  0001 C CNN
+F 3 "~" H 4550 3550 50  0001 C CNN
+	1    4550 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4000 4550 4000
+Wire Wire Line
+	4550 3700 4550 4000
+Connection ~ 4550 4000
+Wire Wire Line
+	4550 4000 4650 4000
+Wire Wire Line
+	4550 3400 4550 3300
+Wire Wire Line
+	4550 3300 4950 3300
+Wire Wire Line
+	4950 3300 4950 3400
+$Comp
+L Device:R R?
+U 1 1 6111A6FD
+P 4950 4450
+AR Path="/61028EB6/6111A6FD" Ref="R?"  Part="1" 
+AR Path="/610E7A85/6111A6FD" Ref="R?"  Part="1" 
+AR Path="/6110D687/6111A6FD" Ref="R?"  Part="1" 
+AR Path="/61114447/6111A6FD" Ref="R32"  Part="1" 
+F 0 "R32" H 5020 4496 50  0000 L CNN
+F 1 "220" H 5020 4405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4880 4450 50  0001 C CNN
+F 3 "~" H 4950 4450 50  0001 C CNN
+	1    4950 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6111A703
+P 4550 4450
+AR Path="/61028EB6/6111A703" Ref="R?"  Part="1" 
+AR Path="/6110D687/6111A703" Ref="R?"  Part="1" 
+AR Path="/61114447/6111A703" Ref="R30"  Part="1" 
+F 0 "R30" H 4620 4496 50  0000 L CNN
+F 1 "2.2k" H 4620 4405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4480 4450 50  0001 C CNN
+F 3 "~" H 4550 4450 50  0001 C CNN
+	1    4550 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4300 4550 4000
+Wire Wire Line
+	4550 4600 4550 4700
+Wire Wire Line
+	4950 4600 4950 4700
+$Comp
+L power:GND #PWR?
+U 1 1 6111A70C
+P 4550 4700
+AR Path="/61028EB6/6111A70C" Ref="#PWR?"  Part="1" 
+AR Path="/6110D687/6111A70C" Ref="#PWR?"  Part="1" 
+AR Path="/61114447/6111A70C" Ref="#PWR0164"  Part="1" 
+F 0 "#PWR0164" H 4550 4450 50  0001 C CNN
+F 1 "GND" H 4555 4527 50  0000 C CNN
+F 2 "" H 4550 4700 50  0001 C CNN
+F 3 "" H 4550 4700 50  0001 C CNN
+	1    4550 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6111A712
+P 4950 4700
+AR Path="/61028EB6/6111A712" Ref="#PWR?"  Part="1" 
+AR Path="/6110D687/6111A712" Ref="#PWR?"  Part="1" 
+AR Path="/61114447/6111A712" Ref="#PWR0165"  Part="1" 
+F 0 "#PWR0165" H 4950 4450 50  0001 C CNN
+F 1 "GND" H 4955 4527 50  0000 C CNN
+F 2 "" H 4950 4700 50  0001 C CNN
+F 3 "" H 4950 4700 50  0001 C CNN
+	1    4950 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4200 4950 4300
+$Comp
+L Device:R R?
+U 1 1 6111A72C
+P 5550 4200
+AR Path="/61028EB6/6111A72C" Ref="R?"  Part="1" 
+AR Path="/610E7A85/6111A72C" Ref="R?"  Part="1" 
+AR Path="/6110D687/6111A72C" Ref="R?"  Part="1" 
+AR Path="/61114447/6111A72C" Ref="R33"  Part="1" 
+F 0 "R33" H 5620 4246 50  0000 L CNN
+F 1 "10k" H 5620 4155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 5480 4200 50  0001 C CNN
+F 3 "~" H 5550 4200 50  0001 C CNN
+	1    5550 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6111A732
+P 5550 4450
+AR Path="/61028EB6/6111A732" Ref="#PWR?"  Part="1" 
+AR Path="/6110D687/6111A732" Ref="#PWR?"  Part="1" 
+AR Path="/61114447/6111A732" Ref="#PWR0166"  Part="1" 
+F 0 "#PWR0166" H 5550 4200 50  0001 C CNN
+F 1 "GND" H 5555 4277 50  0000 C CNN
+F 2 "" H 5550 4450 50  0001 C CNN
+F 3 "" H 5550 4450 50  0001 C CNN
+	1    5550 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3550 5550 3300
+Connection ~ 4950 3300
+Wire Wire Line
+	5550 4450 5550 4350
+Wire Wire Line
+	5550 4050 5550 4000
+Wire Wire Line
+	5950 4000 5550 4000
+Connection ~ 5550 4000
+Wire Wire Line
+	5550 4000 5550 3950
+$Comp
+L Device:R R?
+U 1 1 6111A740
+P 6350 4250
+AR Path="/61028EB6/6111A740" Ref="R?"  Part="1" 
+AR Path="/6110D687/6111A740" Ref="R?"  Part="1" 
+AR Path="/61114447/6111A740" Ref="R34"  Part="1" 
+F 0 "R34" H 6420 4296 50  0000 L CNN
+F 1 "22k" H 6420 4205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 6280 4250 50  0001 C CNN
+F 3 "~" H 6350 4250 50  0001 C CNN
+	1    6350 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4000 6350 4000
+Wire Wire Line
+	6350 4000 6350 4100
+$Comp
+L Device:R_POT RV?
+U 1 1 6111A748
+P 6350 4650
+AR Path="/61028EB6/6111A748" Ref="RV?"  Part="1" 
+AR Path="/610E7A85/6111A748" Ref="RV?"  Part="1" 
+AR Path="/6110D687/6111A748" Ref="RV?"  Part="1" 
+AR Path="/61114447/6111A748" Ref="RV12"  Part="1" 
+F 0 "RV12" H 6281 4696 50  0000 R CNN
+F 1 "100k" H 6281 4605 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6350 4650 50  0001 C CNN
+F 3 "~" H 6350 4650 50  0001 C CNN
+	1    6350 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6111A74E
+P 6350 4900
+AR Path="/61028EB6/6111A74E" Ref="#PWR?"  Part="1" 
+AR Path="/6110D687/6111A74E" Ref="#PWR?"  Part="1" 
+AR Path="/61114447/6111A74E" Ref="#PWR0167"  Part="1" 
+F 0 "#PWR0167" H 6350 4650 50  0001 C CNN
+F 1 "GND" H 6355 4727 50  0000 C CNN
+F 2 "" H 6350 4900 50  0001 C CNN
+F 3 "" H 6350 4900 50  0001 C CNN
+	1    6350 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4900 6350 4800
+$Comp
+L Device:R_POT RV?
+U 1 1 6111A755
+P 6850 4650
+AR Path="/61028EB6/6111A755" Ref="RV?"  Part="1" 
+AR Path="/6110D687/6111A755" Ref="RV?"  Part="1" 
+AR Path="/61114447/6111A755" Ref="RV13"  Part="1" 
+F 0 "RV13" V 6735 4650 50  0000 C CNN
+F 1 "10k" V 6644 4650 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical" H 6850 4650 50  0001 C CNN
+F 3 "~" H 6850 4650 50  0001 C CNN
+	1    6850 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 4500 6850 4400
+Wire Wire Line
+	6850 4400 7100 4400
+Wire Wire Line
+	7100 4400 7100 4650
+Wire Wire Line
+	7100 4650 7000 4650
+Wire Wire Line
+	7100 4650 7250 4650
+Connection ~ 7100 4650
+Text GLabel 7250 4650 2    50   Input ~ 0
+TO_SUMMING_AMP
+Wire Wire Line
+	4150 4000 3950 4000
+Text GLabel 3950 4000 0    50   Input ~ 0
+TO_FILTER
+$Comp
+L power:+15V #PWR?
+U 1 1 6111A764
+P 4950 3200
+AR Path="/61028EB6/6111A764" Ref="#PWR?"  Part="1" 
+AR Path="/6110D687/6111A764" Ref="#PWR?"  Part="1" 
+AR Path="/61114447/6111A764" Ref="#PWR0168"  Part="1" 
+F 0 "#PWR0168" H 4950 3050 50  0001 C CNN
+F 1 "+15V" H 4965 3373 50  0000 C CNN
+F 2 "" H 4950 3200 50  0001 C CNN
+F 3 "" H 4950 3200 50  0001 C CNN
+	1    4950 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3300 4950 3200
+$Comp
+L Device:C C?
+U 1 1 6111A76B
+P 6650 3500
+AR Path="/61028EB6/6111A76B" Ref="C?"  Part="1" 
+AR Path="/610E7A85/6111A76B" Ref="C?"  Part="1" 
+AR Path="/6110D687/6111A76B" Ref="C?"  Part="1" 
+AR Path="/61114447/6111A76B" Ref="C35"  Part="1" 
+F 0 "C35" H 6765 3546 50  0000 L CNN
+F 1 "100n" H 6765 3455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 6688 3350 50  0001 C CNN
+F 3 "~" H 6650 3500 50  0001 C CNN
+	1    6650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 6111A771
+P 6650 3250
+AR Path="/61028EB6/6111A771" Ref="#PWR?"  Part="1" 
+AR Path="/6110D687/6111A771" Ref="#PWR?"  Part="1" 
+AR Path="/61114447/6111A771" Ref="#PWR0169"  Part="1" 
+F 0 "#PWR0169" H 6650 3100 50  0001 C CNN
+F 1 "+15V" H 6665 3423 50  0000 C CNN
+F 2 "" H 6650 3250 50  0001 C CNN
+F 3 "" H 6650 3250 50  0001 C CNN
+	1    6650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6111A777
+P 6650 3750
+AR Path="/61028EB6/6111A777" Ref="#PWR?"  Part="1" 
+AR Path="/6110D687/6111A777" Ref="#PWR?"  Part="1" 
+AR Path="/61114447/6111A777" Ref="#PWR0170"  Part="1" 
+F 0 "#PWR0170" H 6650 3500 50  0001 C CNN
+F 1 "GND" H 6655 3577 50  0000 C CNN
+F 2 "" H 6650 3750 50  0001 C CNN
+F 3 "" H 6650 3750 50  0001 C CNN
+	1    6650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3350 6650 3250
+Wire Wire Line
+	6650 3750 6650 3650
+$Comp
+L Device:CP1 C?
+U 1 1 6111A77F
+P 7150 3500
+AR Path="/61028EB6/6111A77F" Ref="C?"  Part="1" 
+AR Path="/6110D687/6111A77F" Ref="C?"  Part="1" 
+AR Path="/61114447/6111A77F" Ref="C36"  Part="1" 
+F 0 "C36" H 7265 3546 50  0000 L CNN
+F 1 "100u" H 7265 3455 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7150 3500 50  0001 C CNN
+F 3 "~" H 7150 3500 50  0001 C CNN
+	1    7150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6111A785
+P 7150 3750
+AR Path="/61028EB6/6111A785" Ref="#PWR?"  Part="1" 
+AR Path="/6110D687/6111A785" Ref="#PWR?"  Part="1" 
+AR Path="/61114447/6111A785" Ref="#PWR0171"  Part="1" 
+F 0 "#PWR0171" H 7150 3500 50  0001 C CNN
+F 1 "GND" H 7155 3577 50  0000 C CNN
+F 2 "" H 7150 3750 50  0001 C CNN
+F 3 "" H 7150 3750 50  0001 C CNN
+	1    7150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3750 7150 3650
+Wire Wire Line
+	7150 3350 7150 3250
+$Comp
+L power:+15V #PWR?
+U 1 1 6111A78D
+P 7150 3250
+AR Path="/61028EB6/6111A78D" Ref="#PWR?"  Part="1" 
+AR Path="/6110D687/6111A78D" Ref="#PWR?"  Part="1" 
+AR Path="/61114447/6111A78D" Ref="#PWR0172"  Part="1" 
+F 0 "#PWR0172" H 7150 3100 50  0001 C CNN
+F 1 "+15V" H 7165 3423 50  0000 C CNN
+F 2 "" H 7150 3250 50  0001 C CNN
+F 3 "" H 7150 3250 50  0001 C CNN
+	1    7150 3250
+	1    0    0    -1  
+$EndComp
+Text Notes 5500 2900 0    50   ~ 0
+BRILLIANCE EQ
+Wire Wire Line
+	6350 4400 6350 4500
+Wire Wire Line
+	6500 4650 6700 4650
+$Comp
+L Device:C C?
+U 1 1 6111A796
+P 4300 4000
+AR Path="/61028EB6/6111A796" Ref="C?"  Part="1" 
+AR Path="/610E7A85/6111A796" Ref="C?"  Part="1" 
+AR Path="/6110D687/6111A796" Ref="C?"  Part="1" 
+AR Path="/61114447/6111A796" Ref="C33"  Part="1" 
+F 0 "C33" V 4048 4000 50  0000 C CNN
+F 1 "22n" V 4139 4000 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 4338 3850 50  0001 C CNN
+F 3 "~" H 4300 4000 50  0001 C CNN
+	1    4300 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6111A79C
+P 6100 4000
+AR Path="/61028EB6/6111A79C" Ref="C?"  Part="1" 
+AR Path="/610E7A85/6111A79C" Ref="C?"  Part="1" 
+AR Path="/6110D687/6111A79C" Ref="C?"  Part="1" 
+AR Path="/61114447/6111A79C" Ref="C34"  Part="1" 
+F 0 "C34" V 5848 4000 50  0000 C CNN
+F 1 "22n" V 5939 4000 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 6138 3850 50  0001 C CNN
+F 3 "~" H 6100 4000 50  0001 C CNN
+	1    6100 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3700 4950 3750
+Wire Wire Line
+	5250 3750 4950 3750
+Connection ~ 4950 3750
+Wire Wire Line
+	4950 3750 4950 3800
+Wire Wire Line
+	4950 3300 5550 3300
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 61CB7788
+P 4850 4000
+AR Path="/6110D687/61CB7788" Ref="Q?"  Part="1" 
+AR Path="/61114447/61CB7788" Ref="Q9"  Part="1" 
+F 0 "Q9" H 5041 4046 50  0000 L CNN
+F 1 "BC547" H 5041 3955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 5050 3925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 4850 4000 50  0001 L CNN
+	1    4850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 61CB9BDA
+P 5450 3750
+AR Path="/6110D687/61CB9BDA" Ref="Q?"  Part="1" 
+AR Path="/61114447/61CB9BDA" Ref="Q10"  Part="1" 
+F 0 "Q10" H 5641 3796 50  0000 L CNN
+F 1 "BC547" H 5641 3705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 5650 3675 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 5450 3750 50  0001 L CNN
+	1    5450 3750
+	1    0    0    -1  
+$EndComp
+Text Notes 5600 3050 0    50   ~ 0
+> 8kHz
+$EndSCHEMATC
