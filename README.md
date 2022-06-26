@@ -26,3 +26,7 @@ To build the project, everything needed is inside the `docs` directory
 * Schematics
 
 An LTspice simulation is also available in the `simulation` directory
+
+### To-do
+
+* Add EQ alignment process instructions
